@@ -30,9 +30,14 @@ window.addEventListener("load", function() {
     resetBtn.removeAttribute("class");
   }); 
 
-  form.addEventListener("submit", function() {
-    window.alert("Do you need a new computer? Visit www.superextracomputersales.com to find the best deals!");
-  }); 
+  function advertisement () {
+    alert("Do you need a new computer? Visit www.superextracomputersales.com to find the best deals!");
+  }
+
+  form.addEventListener("submit", advertisement)
+  // form.addEventListener("submit", function() {
+  //   window.alert("Do you need a new computer? Visit www.superextracomputersales.com to find the best deals!");
+  // }); 
 
   resetBtn.addEventListener("click", function() {
     story.setAttribute("class", "hidden");
